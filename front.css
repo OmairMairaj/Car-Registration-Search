@@ -1,0 +1,69 @@
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(#589930,#9eec6e,rgb(146, 216, 119));
+}
+
+* {
+    box-sizing: border-box;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+
+    
+}
+.container {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#charactersList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
+.character {
+    background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 20px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        'name image'
+        'house image';
+    text-align: left;
+}
+
+.character > h2 {
+    grid-area: name;
+    margin-bottom: 0px;
+}
+
+.character > img {
+    max-height: 100px;
+    grid-area: image;
+}
+
+#searchBar {
+    width: 80%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#searchWrapper {
+    position: relative;
+}
+
+#searchWrapper::after {
+    content: '🔍';
+    position:relative;
+    top: 2px;
+    right: 35px;
+}

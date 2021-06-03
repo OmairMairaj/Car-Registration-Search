@@ -1,0 +1,21 @@
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(#589930,#9eec6e,rgb(146, 216, 119));
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Times New Roman', serif;
+    
+}
+form{
+    margin-top: 10px;
+    text-align: center;
+}
+.form-group{
+    text-align: left;
+}
+.form-title{
+    font-size: 20px;
+}
